@@ -38,6 +38,6 @@ document.getElementById("btn_entrar").addEventListener("click",()=>{
         localStorage.setItem('token', token);
         localStorage.setItem('userLogado', JSON.stringify(usuValido))
 
-        window.location.href = "../telaInicial.html";
+        window.location.href = "telaInicial.html";
     })
 });

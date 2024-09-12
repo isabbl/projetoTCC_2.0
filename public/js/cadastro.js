@@ -35,7 +35,7 @@ btn_cadastro.addEventListener("click",()=>{
                 tipo: "sn",
                 textos: ["SIM","NÃO"],
                 comando_sn: ()=>{
-                    window.open("../login.html","_self");
+                    window.open("login.html","_self");
                 }
             }
              return Cxmsg.mostrar(config,"CADASTRO REALIZADO!", "Ir para a tela de login ?");

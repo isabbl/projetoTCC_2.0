@@ -1,9 +1,9 @@
 import { Cxmsg } from "./Cxmsg.js";
 
-//Verificação para ver se usuário está logado
+// // Verificação para ver se usuário está logado
 // if(localStorage.getItem("token") == null){
 //     alert("Você precisa estar logado para acessar esssa página")
-//     window.location.href = "../login.html"
+//     window.location.href = "login.html"
 // }
 
 // // Pegando o usuário logado do localStorage
@@ -50,4 +50,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelector(".sair").addEventListener("click",()=>{
     localStorage.clear()
-})
+});
+
+// Pegando botão para adicionar lugar
+
+let btnAddLocal = document.querySelector(".btnAdd");
+
+btnAddLocal.addEventListener("click",()=>{
+    let config = {
+        cor: "#8910c277",
+        tipo: "sn",
+        textos: ["Sim", "Não"],
+        comando_sn: ()=>{
+            window.open("index.html","_self");
+        }
+    }
+
+    Cxmsg.mostrar(config, "Cadastro Lugar", "Deseja cadastrar algum lugar ?");
+});

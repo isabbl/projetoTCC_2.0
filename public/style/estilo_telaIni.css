@@ -93,18 +93,22 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    margin-top: 12em;
-    margin-right: 10em;
+    margin-top: 17em;
+    margin-right: 12em;
+    margin-bottom: 1.1em;
 }
 
 .caixaBtnAdd > .btnAdd{
     cursor: pointer;
     display: flex;
     align-items: center;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(360deg, #8910c277, rgba(170, 152, 169, 0.904));
     justify-content: center;
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 50%;
 }
 
 

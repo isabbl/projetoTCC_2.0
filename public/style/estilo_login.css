@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body {
+   background-image:  linear-gradient(140deg, rgba(130, 10, 132, 0.822), white );
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 13px 0px 10px rgb(0 0 0 / 10%);
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+.left {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+.left img {
+    width: 150px;
+}
+.right {
+    padding: 40px;
+    width: 50%;
+}
+.right h2 {
+    margin-bottom: 20px;
+}
+.right input[type="text"],
+.right input[type="email"],
+.right input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.right button {
+    background-color: #FF69B4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.right button:hover {
+    background-color: #FF1493;
+}
+.right p {
+    margin-top: 20px;
+}
+
+@media screen and (min-width:360px) and (max-width:734.40px) {
+
+    .login-container {
+        display: flex;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        box-shadow: 13px 0px 10px rgb(0 0 0 / 10%) !important;
+        max-width: 800px !important;
+        width: 95% !important;
+        overflow: hidden;
+    }
+
+    .left {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 11px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 43% !important;
+    }
+
+    .left img {
+        width: 150px !important;
+    }
+
+    .right {
+        padding: 34px !important;
+        width: 50% !important;
+    }
+
+    .right input[type="text"], .right input[type="email"], .right input[type="password"] {
+        width: 85%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+}

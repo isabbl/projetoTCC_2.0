@@ -18,7 +18,7 @@ let cards = [...document.querySelectorAll(".card")];
 // pegando um card por card
 cards.forEach((elemento)=>{
     elemento.addEventListener("click",()=>{
-        let endpoint = elemento.firstElementChild.nextElementSibling.innerHTML
+        let endpoint = elemento.firstElementChild.nextElementSibling.firstElementChild.innerHTML
         endpoint = endpoint.split(" ").join("");
         endpoint = endpoint.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
         window.open(`locais/${endpoint}.html`);
@@ -52,6 +52,7 @@ document.querySelector(".sair").addEventListener("click",()=>{
     localStorage.clear()
 });
 
+
 // Pegando botão para adicionar lugar
 
 let btnAddLocal = document.querySelector(".btnAdd");
@@ -62,7 +63,7 @@ btnAddLocal.addEventListener("click",()=>{
         tipo: "sn",
         textos: ["Sim", "Não"],
         comando_sn: ()=>{
-            window.open("index.html","_self");
+            window.open("cadastroLugar.html","_self");
         }
     }
 

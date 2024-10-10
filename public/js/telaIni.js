@@ -63,7 +63,7 @@ btnAddLocal.addEventListener("click",()=>{
         tipo: "sn",
         textos: ["Sim", "Não"],
         comando_sn: ()=>{
-            window.open("cadastroLugar.html","_self");
+            window.open("index.html","_self");
         }
     }
 

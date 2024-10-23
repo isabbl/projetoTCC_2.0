@@ -34,3 +34,15 @@ document.getElementById('add-post-form').addEventListener('submit', function(eve
       alert('Erro ao cadastrar os dados, verifique o console para mais detalhes');
   });
 });
+
+
+if(localStorage.getItem("token") == null){
+    alert("Você precisa estar logado para acessar esssa página");
+    window.location.href = "login.html";
+}
+
+// Saindo do perfil
+
+document.querySelector(".sair").addEventListener("click",()=>{
+    localStorage.clear()
+});

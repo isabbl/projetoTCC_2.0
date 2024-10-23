@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         divColuna.setAttribute("class","col");
 
         const divCard = document.createElement("div");
-        divCard.setAttribute("class","card");
-        divCard.setAttribute("class","h-100");
+        divCard.setAttribute("class","card h-100");
         divColuna.appendChild(divCard);
 
         const imgCard = document.createElement("img");
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const paragrafoDesc = document.createElement("p");
         paragrafoDesc.setAttribute("class","card-text");
         paragrafoDesc.innerHTML = "Clique para saber mais!";
-        paragrafoDesc.appendChild(tituloLugar);
+        divCorpoCard.appendChild(paragrafoDesc);
 
         grupoDeCards.appendChild(divColuna);
 

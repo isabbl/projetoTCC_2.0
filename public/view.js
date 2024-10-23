@@ -39,8 +39,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const paragrafoDesc = document.createElement("p");
         paragrafoDesc.setAttribute("class","card-text");
-        paragrafoDesc.innerHTML = "Clique para saber mais!";
+        paragrafoDesc.innerHTML = lugar.descricao;
         divCorpoCard.appendChild(paragrafoDesc);
+
+        const paragrafoEndereco = document.createElement("p");
+        paragrafoEndereco.setAttribute("class","card-text");
+        paragrafoEndereco.innerHTML = lugar.local;
+        divCorpoCard.appendChild(paragrafoEndereco);
+
+        const paragrafoTipoLugar = document.createElement("p");
+        paragrafoTipoLugar.setAttribute("class","card-text");
+        paragrafoTipoLugar.innerHTML = lugar.tipo_lugar;
+        divCorpoCard.appendChild(paragrafoTipoLugar);
+
+        const paragrafoTelefone = document.createElement("p");
+        paragrafoTelefone.setAttribute("class","card-text");
+        paragrafoTelefone.innerHTML = lugar.telefone;
+        divCorpoCard.appendChild(paragrafoTelefone);
+
+        const paragrafoEstacao = document.createElement("p");
+        paragrafoEstacao.setAttribute("class","card-text");
+        paragrafoEstacao.innerHTML = lugar.estacao;
+        divCorpoCard.appendChild(paragrafoEstacao);
+
+        const paragrafoFormaPagamento = document.createElement("p");
+        paragrafoFormaPagamento.setAttribute("class","card-text");
+        paragrafoFormaPagamento.innerHTML = lugar.pagamento;
+        divCorpoCard.appendChild(paragrafoFormaPagamento);
+
+        const paragrafoFazReserva = document.createElement("p");
+        paragrafoFazReserva.setAttribute("class","card-text");
+        paragrafoFazReserva.innerHTML = lugar.reserva;
+        divCorpoCard.appendChild(paragrafoFazReserva);
 
         grupoDeCards.appendChild(divColuna);
 

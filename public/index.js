@@ -36,10 +36,10 @@ document.getElementById('add-post-form').addEventListener('submit', function(eve
 });
 
 
-if(localStorage.getItem("token") == null){
-    alert("Você precisa estar logado para acessar esssa página");
-    window.location.href = "login.html";
-}
+// if(localStorage.getItem("token") == null){
+//     alert("Você precisa estar logado para acessar esssa página");
+//     window.location.href = "login.html";
+// }
 
 // Saindo do perfil
 

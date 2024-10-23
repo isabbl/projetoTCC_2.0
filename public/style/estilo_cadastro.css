@@ -74,6 +74,10 @@ body{
     color: white;
 }
 
+#divmsg{
+    height: 100vh !important;
+}
+
 @media screen and (min-width:360px) and (max-width:734.40px)  {
 
     body{

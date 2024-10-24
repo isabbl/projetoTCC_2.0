@@ -39,37 +39,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const paragrafoDesc = document.createElement("p");
         paragrafoDesc.setAttribute("class","card-text");
-        paragrafoDesc.innerHTML = lugar.descricao;
+        paragrafoDesc.innerHTML = `<strong>Descrição:</strong> ${lugar.descricao}`;
         divCorpoCard.appendChild(paragrafoDesc);
 
         const paragrafoEndereco = document.createElement("p");
         paragrafoEndereco.setAttribute("class","card-text");
-        paragrafoEndereco.innerHTML = lugar.local;
+        paragrafoEndereco.innerHTML =` <strong>Endereço:</strong> ${lugar.local}`;
         divCorpoCard.appendChild(paragrafoEndereco);
 
         const paragrafoTipoLugar = document.createElement("p");
         paragrafoTipoLugar.setAttribute("class","card-text");
-        paragrafoTipoLugar.innerHTML = lugar.tipo_lugar;
+        paragrafoTipoLugar.innerHTML = `<strong>Tipo de Lugar:</strong> ${lugar.tipo_lugar}`;
         divCorpoCard.appendChild(paragrafoTipoLugar);
 
         const paragrafoTelefone = document.createElement("p");
         paragrafoTelefone.setAttribute("class","card-text");
-        paragrafoTelefone.innerHTML = lugar.telefone;
+        paragrafoTelefone.innerHTML = `<strong>Telefone:</strong> ${lugar.telefone}`;
         divCorpoCard.appendChild(paragrafoTelefone);
 
         const paragrafoEstacao = document.createElement("p");
         paragrafoEstacao.setAttribute("class","card-text");
-        paragrafoEstacao.innerHTML = lugar.estacao;
+        paragrafoEstacao.innerHTML = ` <strong>Estação mais proxima:</strong> ${lugar.estacao}`;
         divCorpoCard.appendChild(paragrafoEstacao);
 
         const paragrafoFormaPagamento = document.createElement("p");
         paragrafoFormaPagamento.setAttribute("class","card-text");
-        paragrafoFormaPagamento.innerHTML = lugar.pagamento;
+        paragrafoFormaPagamento.innerHTML = `<strong>Forma de Pagamento:</strong> ${lugar.pagamento}`;
         divCorpoCard.appendChild(paragrafoFormaPagamento);
 
         const paragrafoFazReserva = document.createElement("p");
         paragrafoFazReserva.setAttribute("class","card-text");
-        paragrafoFazReserva.innerHTML = lugar.reserva;
+        paragrafoFazReserva.innerHTML = `<strong>Faz reservas?</strong> ${lugar.reserva}`;
         divCorpoCard.appendChild(paragrafoFazReserva);
 
         grupoDeCards.appendChild(divColuna);

@@ -27,24 +27,11 @@ cards.forEach((elemento)=>{
 
 //Colocando imagem de perfil
 
-document.addEventListener('DOMContentLoaded', () => {
-    let inputFoto = document.querySelector("#fileInput")
-    let fotoPerfil = document.querySelector(".fotoPerfil")
-
-    inputFoto.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            
-            reader.onload = function(e) {
-                fotoPerfil.src = e.target.result;
-                console.log(fotoPerfil)
-            }
-            
-            reader.readAsDataURL(file);
-        }
-    });
-});
+    let fotoPerfil = document.querySelector(".fotoPerfil");
+    fotoPerfil.addEventListener("click",()=>{
+        let urlFoto = prompt("Coloque aqui o url da sua foto");
+        fotoPerfil.src = urlFoto;
+    })
 
 // Saindo do perfil
 

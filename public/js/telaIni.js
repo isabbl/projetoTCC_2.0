@@ -1,29 +1,29 @@
 import { Cxmsg } from "./Cxmsg.js";
 
 // // Verificação para ver se usuário está logado
-if(localStorage.getItem("token") == null){
-    alert("Você precisa estar logado para acessar esssa página");
-    window.location.href = "login.html";
-}
+// if(localStorage.getItem("token") == null){
+//     alert("Você precisa estar logado para acessar esssa página");
+//     window.location.href = "login.html";
+// }
 
-// Pegando o usuário logado do localStorage
-let userLogado = JSON.parse(localStorage.getItem("userLogado"));
-let msg = document.querySelector("#msg");
-msg.innerHTML = `Seja Bem Vindo(a) ${userLogado.nome}`;
+// // Pegando o usuário logado do localStorage
+// let userLogado = JSON.parse(localStorage.getItem("userLogado"));
+// let msg = document.querySelector("#msg");
+// msg.innerHTML = `Seja Bem Vindo(a) ${userLogado.nome}`;
 
 // Pegando os cards
 
 let cards = [...document.querySelectorAll(".card")];
 
 // pegando um card por card
-cards.forEach((elemento)=>{
-    elemento.addEventListener("click",()=>{
-        let endpoint = elemento.firstElementChild.nextElementSibling.firstElementChild.innerHTML
-        endpoint = endpoint.split(" ").join("");
-        endpoint = endpoint.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-        window.open(`locais/${endpoint}.html`);
-    })
-});
+// cards.forEach((elemento)=>{
+//     elemento.addEventListener("click",()=>{
+//         let endpoint = elemento.firstElementChild.nextElementSibling.firstElementChild.innerHTML
+//         endpoint = endpoint.split(" ").join("");
+//         endpoint = endpoint.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+//         window.open(`locais/${endpoint}.html`);
+//     })
+// });
 
 //Colocando imagem de perfil
 
@@ -45,20 +45,11 @@ document.querySelector(".sair").addEventListener("click",()=>{
 let btnAddLocal = document.querySelector(".btnAdd");
 
 btnAddLocal.addEventListener("click",()=>{
-    let config = {
-        cor: "#8910c277",
-        tipo: "sn",
-        textos: ["Sim", "Não"],
-        comando_sn: ()=>{
-            window.open("index.html","_self");
-        }
-    }
-
-    Cxmsg.mostrar(config, "Cadastro Lugar", "Deseja cadastrar algum lugar ?");
+    window.open("index.html","_self");
 });
 
 //Verificando se usuario é admin
 
 if(userLogado.nome!="admin"){
-    btnAddLocal.style.display = "none";
+    divBtnAdicionaLugar.style.display = "none";
 }

@@ -68,6 +68,15 @@ body {
     height: 100vh !important;
 }
 
+.linkCadastro{
+    text-decoration: none;
+    color: #FF69B4 ;
+}
+
+.linkCadastro:hover{
+    text-decoration: underline;
+}
+
 @media screen and (min-width:360px) and (max-width:734.40px) {
 
     .login-container {

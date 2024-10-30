@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(89deg, rgba(130, 10, 132, 0.822), white );
+    background-image: linear-gradient(89deg, #820a84d2, white );
     margin: 0;
     padding: 0;
 }
@@ -60,15 +60,6 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
 }
-/* .card {
-    cursor: pointer;
-    width: 23%;
-    background-color: #eee;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 7px 0px 10px rgb(4 4 4 / 26%);
-    position: relative;
-} */
 
 .card:hover{
     scale: 1.1;
@@ -89,27 +80,6 @@ body {
     font-size: 1.2em;
 }
 
-.caixaBtnAdd{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-top: 3em;
-    margin-right: 12em;
-    margin-bottom: 1.1em;
-}
-
-.caixaBtnAdd > .btnAdd{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-image: linear-gradient(360deg, #8910c277, rgba(170, 152, 169, 0.904));
-    justify-content: center;
-    font-weight: bolder;
-    color: #fff;
-    border-radius: 50%;
-}
 
 
 @media screen and (min-width:360px) and (max-width:734.40px)  {

@@ -13,14 +13,15 @@
 
 <body>
     <main class="container">
+        
         <header class="header">
             <img src="imgs/foto_padrao.png" alt="foto perfil" class="fotoPerfil">
             <ul class="nav nav-underline">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="telaInicial.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="view.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: black;">Meu perfil</a>
+                    <a class="nav-link" href="./telaPerfil.html" style="color: black;">Meu perfil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link sair" href="#" style="color: black;">Sair</a>
@@ -31,6 +32,7 @@
                 </li>
             </ul>
         </header>
+
         <aside class="main-image">
             <h2 id="msg">OS MAIS VISTOS PERTO DE VOCÊ</h2>
         </aside>
@@ -102,12 +104,26 @@
         </div>
     </main>
 
-    <aside class="caixaBtnAdd">
-        <div class="btnAdd">
-            +
-        </div>
-    </aside>
+    <section>
+        <footer class="text-center text-white" style="background-color: #d19cd2ba; margin-top: 5em;">
+          <div class="container p-4 pb-0 divBtnAdicionaLugar" style="background-color: #000000a8;" >
+            <section>
+              <p class="d-flex justify-content-center align-items-center" >
+                <button data-mdb-ripple-init type="button" class="btn btn-outline-light btn-rounded btnAdd" style="margin-bottom: 10px;">
+                 Cadastrar lugar
+                </button>
+              </p>
+            </section>
+          </div>
+      
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="#topo" style="text-decoration: none;">TURISTAR.com</a>
+          </div>
+        </footer>
+      </section>
 
+    
     <script type="module" src="js/telaIni.js"></script>
     <script src="view.js"></script>
     <script type="module" src="js/Cxmsg.js"></script>

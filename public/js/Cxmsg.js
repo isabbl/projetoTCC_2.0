@@ -26,7 +26,7 @@ class Cxmsg{
     "top: 0px;"+
     "left: 0px;"+
     "width: 100%;"+
-    "height: 254%;"+
+    "height: 100%;"+
     "background-color: rgba(0,0,0,0.7);"+
     "z-index:9999";
 

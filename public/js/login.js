@@ -33,7 +33,8 @@ document.getElementById("btn_entrar").addEventListener("click",()=>{
             nome: res[0].nome_usu,
             senha: res[0].senha_usu,
             rua: res[0].rua_usu,
-            bairro: res[0].bairro_usu
+            bairro: res[0].bairro_usu,
+            fotoUsuario : res[0].imagemPerfil_usu
         }
         let mathRandom = Math.random().toString(16).substr(2)
         let token = mathRandom + mathRandom

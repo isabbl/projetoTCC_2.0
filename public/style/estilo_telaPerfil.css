@@ -29,6 +29,10 @@
     font-size: 16px;
 }
 
+.botaoPerfil:hover{
+    background-color: #6e0777 ;
+}
+
 #inputArquivo{
     display: none;
 }

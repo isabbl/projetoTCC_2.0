@@ -34,22 +34,11 @@ let inputFile = document.querySelector("#inputArquivo");
 let divImg = document.querySelector(".imagem");
 
 btnEnviarImagem.addEventListener("click",()=>{
-    inputFile.click();
+    let img = prompt("Coloque aqui o URL da imagem de perfil");
+
+    let imgFundoDiv = `background: url(${img});`
+
+    divImg.setAttribute("style", imgFundoDiv);
 });
 
-inputFile.addEventListener("change",(evento)=>{
-    const arquivo = evento.target.files[0];
-
-    if(arquivo){
-        const reader = new FileReader();
-
-        reader.onload = function(e) {
-            const backgroundDiv = `background: url(${e.target.result});`;
-
-            divImg.setAttribute("style", backgroundDiv);
-            
-        };
-
-        reader.readAsDataURL(arquivo);
-    }
-})
+           

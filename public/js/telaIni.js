@@ -1,17 +1,17 @@
 import { Cxmsg } from "./Cxmsg.js";
 
-// // Verificação para ver se usuário está logado
-// if(localStorage.getItem("token") == null){
-//     alert("Você precisa estar logado para acessar esssa página");
-//     window.location.href = "login.html";
-// }
+// Verificação para ver se usuário está logado
+if(localStorage.getItem("token") == null){
+    alert("Você precisa estar logado para acessar esssa página");
+    window.location.href = "login.html";
+}
 
-// // Pegando o usuário logado do localStorage
-// let userLogado = JSON.parse(localStorage.getItem("userLogado"));
-// let msg = document.querySelector("#msg");
-// msg.innerHTML = `Seja Bem Vindo(a) ${userLogado.nome}`;
+// Pegando o usuário logado do localStorage
+let userLogado = JSON.parse(localStorage.getItem("userLogado"));
+let msg = document.querySelector("#msg");
+msg.innerHTML = `Seja Bem Vindo(a) ${userLogado.nome}`;
 
-// Pegando os cards
+//Pegando os cards
 
 let cards = [...document.querySelectorAll(".card")];
 
@@ -50,6 +50,7 @@ btnAddLocal.addEventListener("click",()=>{
 
 //Verificando se usuario é admin
 
-if(userLogado.nome!="admin"){
+if(userLogado.senha!="admin"){
+    let divBtnAdicionaLugar = document.querySelector(".divBtnAdicionaLugar")
     divBtnAdicionaLugar.style.display = "none";
 }

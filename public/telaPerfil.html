@@ -28,22 +28,25 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disable" aria-disabled="true" style="color: #c316d2;"><img
-                            src="imgs/TURISTAR.png" alt="" style="width: 60px; height: 30px;"></a>
+                            src="imgs/TURISTAR.png" alt="" style="width: 60px; height: 30px;" id="topo"></a>
                 </li>
             </ul>
         </header>
 
             <div class="imagem">
-                <!--Aqui vai a imagem-->
-            </div>    
+               
+            </div> 
+            
+            <input type="file" id="inputArquivo" accept="image/*">
+            <button class="botaoPerfil" id="botaoParaupload">Escolher Imagem de Perfil</button>
 
             <div class="infos">
                 <h3>Informações do usuário</h3>
                 <div class="infosDetalhadas">
-                    <p><strong>Nome: </strong> Caio Barbosa</p>
-                    <p><strong>email: </strong> Caio@gmail.com</p>
-                    <p><strong>Senha: </strong> 12134354</p>
-                    <p><strong>Endereço: </strong> Rua Ascânio</p>
+                    <p><strong>Nome: </strong> <span class="infoNome"></span><p>
+                    <p><strong>email: </strong> <span class="infoEmail"></span></p>
+                    <p><strong>Senha: </strong><span class="infoSenha"> </span></p>
+                    <p><strong>Endereço: </strong> <span class="infoRua"></span> <span class="infoBairro"></span></p>
                 </div>
             </div>
     </main>
@@ -71,6 +74,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="js/perfil.js"></script>
 </body>
 
 </html>

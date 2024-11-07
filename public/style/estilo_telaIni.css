@@ -80,6 +80,16 @@ body {
     font-size: 1.2em;
 }
 
+.icones{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.iconeDel{
+    width: 20px !important;
+    height: 20px !important;
+}
 
 
 @media screen and (min-width:360px) and (max-width:734.40px)  {

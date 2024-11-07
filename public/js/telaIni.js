@@ -45,15 +45,3 @@ if(userLogado.senha!="admin12132024"){
     divBtnAdicionaLugar.style.display = "none";
 }
 
-//excluindo lugar
-
-let btnDel = document.querySelectorAll(".iconeDel");
-
-btnDel = [...btnDel];
-
-btnDel.map((el)=>{
-    el.addEventListener("click",(evento)=>{
-        console.log(evento.target.parentNode.parentNode)
-    })
-})
-

@@ -15,16 +15,6 @@ msg.innerHTML = `Seja Bem Vindo(a) ${userLogado.nome}`;
 
 let cards = [...document.querySelectorAll(".card")];
 
-// pegando um card por card
-// cards.forEach((elemento)=>{
-//     elemento.addEventListener("click",()=>{
-//         let endpoint = elemento.firstElementChild.nextElementSibling.firstElementChild.innerHTML
-//         endpoint = endpoint.split(" ").join("");
-//         endpoint = endpoint.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-//         window.open(`locais/${endpoint}.html`);
-//     })
-// });
-
 //Colocando imagem de perfil
 
     let fotoPerfil = document.querySelector(".fotoPerfil");
@@ -50,7 +40,7 @@ btnAddLocal.addEventListener("click",()=>{
 
 //Verificando se usuario é admin
 
-if(userLogado.senha!="admin"){
+if(userLogado.senha!="admin12132024"){
     let divBtnAdicionaLugar = document.querySelector(".divBtnAdicionaLugar")
     divBtnAdicionaLugar.style.display = "none";
 }

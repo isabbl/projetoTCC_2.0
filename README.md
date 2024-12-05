@@ -1,80 +1,44 @@
 <div align="center">
 
   <img src="./public/imgs/TURISTAR.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>Projeto Turistar</h1>
   
   <p>
-    An awesome README template for your projects! 
+    Projeto de TCC criado na Etec Camargo Aranha com colaboração com o curso de Guia de Turismo!
   </p>
-  
-  
-<!-- Badges -->
-<p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
-    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
-    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
-  </a>
-</p>
    
 <h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
+    <a href="https://github.com/Louis3797/awesome-readme-template/">Documentação</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
+    <a href="http://eteccamargoaranha.com.br/">Etec Camargo Aranha</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
 </div>
 
 <br />
 
 <!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
+# :notebook_with_decorative_cover: Sumário
 
-- [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
+- Sobre o projeto
+  * [Screenshot](#camera-screenshot)
+  * [Tecnologias](#space_invader-tecnologias)
+  * [Recursos](#dart-recursos)
+  * [Paleta de Cores](#art-paleta-de-cores)
+- Se Preparando
+  * [Pré-requisitos](#bangbang-pré-requisitos)
+  * [Rodando localmente](#running-rodando-localmente)
+- [Observações](#eyes-observações)
+- [Contribuidores](#wave-contributing)
 
   
 
 <!-- About the Project -->
-## :star2: About the Project
+## :star2: Sobre o projeto
 
 
 <!-- Screenshots -->
-### :camera: Screenshots
+### :camera: Screenshot
 
 <div align="center"> 
   <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
@@ -82,29 +46,24 @@
 
 
 <!-- TechStack -->
-### :space_invader: Tech Stack
+### :space_invader: Tecnologias
 
 <details>
-  <summary>Client</summary>
+  <summary>Front-end</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML5</a></li>
+    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS3</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
+    <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>Back-end</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    <li><a href="https://nodejs.org/api/all.html">Node.Js</a></li>
     <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
+    <li><a href="https://nodered.org/docs/getting-started/local">Node-Red</a></li>
   </ul>
 </details>
 
@@ -112,131 +71,93 @@
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
   </ul>
 </details>
 
 <!-- Features -->
-### :dart: Features
+### :dart: Recursos
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Cadastrar lugares
+- Criar perfil de Guia de Turismo
+- Visualizar localidades da Mooca
 
 <!-- Color Reference -->
-### :art: Color Reference
+### :art: Paleta de Cores
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-
-
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
+| Cor Principal| ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
+| Cor Secundária | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
+| Cor Texto | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
 
 <!-- Getting Started -->
-## 	:toolbox: Getting Started
+## 	:toolbox: Se Preparando
 
 <!-- Prerequisites -->
-### :bangbang: Prerequisites
+### :bangbang: Pré-requisitos
 
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
-
-<!-- Installation -->
-### :gear: Installation
-
-Install my-project with npm
+Instalar versão atualizado do Node.js
 
 ```bash
-  yarn install my-project
-  cd my-project
-```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
+# installs fnm (Fast Node Manager)
+winget install Schniz.fnm
 
-To run tests, run the following command
+# configure fnm environment
+fnm env --use-on-cd | Out-String | Invoke-Expression
+
+# download and install Node.js
+fnm use --install-if-missing 23
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v23.3.0`
+
+# verifies the right npm version is in the environment
+npm -v # should print `10.9.0`
+```
+
+Instalar Node-red com algumas modificações
 
 ```bash
-  yarn test test
+npm install -g --unsafe-perm node-red
+npm i node-red-node-mysql
 ```
-
 <!-- Run Locally -->
-### :running: Run Locally
+### :running: Rodando localmente
 
-Clone the project
+Clone o repositório
 
 ```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
+  https://github.com/isabbl/projetoTCC_2.0.git
 ```
 
-Go to the project directory
+Vá para o diretório do projeto
 
 ```bash
-  cd my-project
+  cd projetoTCC_2.0
 ```
 
-Install dependencies
+Instale as depedências dependencies
 
 ```bash
-  yarn install
+  npm i
+```
+
+```bash
+  npm i express mysql2 body-parser
 ```
 
 Start the server
 
 ```bash
-  yarn start
-```
-
-
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
-
-To deploy this project run
-
-```bash
-  yarn deploy
+  node server.js
 ```
 
 
 <!-- Usage -->
-## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
+## :eyes: Observações
 
 
-```javascript
-import Component from 'my-project'
 
-function App() {
-  return <Component />
-}
-```
 
 <!-- Roadmap -->
 ## :compass: Roadmap

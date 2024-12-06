@@ -146,7 +146,7 @@ Instale as depedências dependencies
   npm i express mysql2 body-parser
 ```
 
-Start the server
+De start no servidor
 
 ```bash
   node server.js
